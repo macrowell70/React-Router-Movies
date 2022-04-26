@@ -38,8 +38,8 @@ export default function App () {
       <Route exact path='/'>
         <MovieList movies={movieList}/>
       </Route>
-      <Route path='/Movie/:movieID'>
-        <Movie />
+      <Route path='/movies/:id'>
+        <Movie id={movieList.id} title={movieList.title} director={movieList.director} metascore={movieList.metascore} stars={movieList.stars}/>
       </Route>
     </div>
   );
